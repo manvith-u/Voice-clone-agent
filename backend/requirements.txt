@@ -1,0 +1,14 @@
+# VoiceClone Studio backend dependencies
+# Install with:  pip install -r requirements.txt
+#
+# Pocket TTS runs on CPU; on Linux install the CPU build of torch to avoid
+# pulling the multi-GB CUDA wheels:
+#   pip install pocket-tts --extra-index-url https://download.pytorch.org/whl/cpu
+
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+pydantic>=2.6
+scipy>=1.11
+numpy>=1.24
+pocket-tts>=0.1
